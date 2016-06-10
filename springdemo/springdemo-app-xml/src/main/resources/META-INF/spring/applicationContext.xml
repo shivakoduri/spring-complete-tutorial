@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+    <bean id="controller"
+		class="com.myproject.examples.spring.tutOne.FixedDepositController">
+		<property name="fixedDepositService" ref="service" />
+	</bean>
+
+	<bean id="service"
+		class="com.myproject.examples.spring.tutOne.FixedDepositService">
+		<property name="fixedDepositDao" ref="dao" />
+	</bean>
+
+	<bean id="dao" class="com.myproject.examples.spring.tutOne.FixedDepositDao" />
+
+
+</beans>
