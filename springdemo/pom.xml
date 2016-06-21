@@ -205,5 +205,6 @@
     
 	<modules>
 		<module>springdemo-app-xml</module>
+		<module>springdemo-bankapp-interface</module>
 	</modules>
 </project>
